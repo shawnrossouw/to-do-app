@@ -15,13 +15,14 @@ body {
     width: 100%;
     max-width: 500px;
     height: 100%;
-    background-image: linear-gradient(red, purple);
+    background: white;
+    background-image: linear-gradient(#b92601, #8f0064);
 }
 
 .top {
     width: 100%;
-    height: 15vh;
-    background: #336AC0;
+    height: 10vh;
+    background: #010977;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,11 +30,68 @@ body {
     color: white;
     font-family: arial;
     letter-spacing: .1em;
+    text-shadow: 0 0 2px #000;
 }
 
 .bottom {
+    position: relative;
     width: 100%;
-    height: 75vh;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
+
+.item {
+    background: rgba(0,0,0,.5);
+    border-radius: 10px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.74);
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.item-txt {
+    width: 90%;
+    margin: 0;
+    color: white;
+    padding: 10px;
+    font-size: 21px;
+    background: none;
+    outline: none;
+}
+
+.item-dlt {
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(172, 0, 0);
+    border-radius: 50%;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    font-family: arial;
+}
+
+.textarea {
+    display: none;
+    position: absolute;
+    top: 0;
+    margin: 0;
+    width: 80%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-size: 21px;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    resize: none;
 }
 
 .add {
@@ -54,4 +112,17 @@ body {
     background: #336AC0;
     color: white;
     font-size: 2em;
+}
+
+.convert {
+    width: auto;
+    height: 40px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: mediumseagreen;
+    color: white;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 2px 5px;
 }
