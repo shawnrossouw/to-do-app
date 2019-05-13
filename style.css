@@ -12,7 +12,46 @@ body {
 }
 
 .todo {
-    min-width: 150px;
-    height: 150px;
-    background: #000;
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    background-image: linear-gradient(red, purple);
+}
+
+.top {
+    width: 100%;
+    height: 15vh;
+    background: #336AC0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: white;
+    font-family: arial;
+    letter-spacing: .1em;
+}
+
+.bottom {
+    width: 100%;
+    height: 75vh;
+}
+
+.add {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plus {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #336AC0;
+    color: white;
+    font-size: 2em;
 }
