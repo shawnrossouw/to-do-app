@@ -7,9 +7,12 @@
 
 const add = document.querySelector('.plus');
 let field = document.querySelector('.bottom');
+let fieldChild = document.querySelector('.item');
 let textarea = document.querySelector('.textarea');
 let addBtn = document.querySelector('.convert');
+let deleteBtn = document.querySelector('.item-dlt');
 let newDo;
+console.log(fieldChild);
 
 
 add.addEventListener('click', function(){
@@ -43,7 +46,6 @@ function create(){
     console.log(newSection);
 }
 
-function remove(){
-    
-}
->>>>>>> master
+deleteBtn.addEventListener('click', function(){
+    field.removeChild(fieldChild);
+})
