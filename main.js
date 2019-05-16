@@ -5,7 +5,6 @@ let addBtn = document.querySelector('.convert');
 let newDo;
 let list = [];
 
-
 add.addEventListener('click', function(){ //The blue + button//
     //Add the textarea to get input
     textarea.style.display = 'block';
@@ -57,6 +56,7 @@ function create(){ //Initialize function
             var indexNr = list.indexOf(this.parentElement);
             //Now splice(remove) the item from the array
             list.splice(indexNr,1);
+
             console.log(list);
         });
     //Put the `para` and `rmv` in the item div(newSection)
@@ -66,6 +66,8 @@ function create(){ //Initialize function
     field.appendChild(newSection);
     //Add the `newSection` to the array
     list.push(newSection);
+
     console.log(list);
     
 }
+
